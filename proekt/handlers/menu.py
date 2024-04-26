@@ -14,12 +14,12 @@ async def menu_base(message: Message):
     keyboard.add(Text('Монстры', {'menu': 'monsters'}), color=KeyboardButtonColor.NEGATIVE)
     keyboard.row()
     keyboard.add(Text("Мировые боссы", {'menu': 'bosses'}), color=KeyboardButtonColor.NEGATIVE)
-    keyboard.row()
-    # keyboard.add(Text('Инвентарь', {'menu': 'inv'}), color=KeyboardButtonColor.POSITIVE)
     # keyboard.row()
-    keyboard.add(Text('Игры', {'menu': 'casino'}))
+    # keyboard.add(Text('Инвентарь', {'menu': 'inv'}), color=KeyboardButtonColor.POSITIVE)
     keyboard.row()
-    keyboard.add(Text('Дополнительная информация', {'menu': 'info'}))
+    keyboard.add(Text('Игры', {'menu': 'casino'}))
+    # keyboard.row()
+    # keyboard.add(Text('Дополнительная информация', {'menu': 'info'}))
     await message.answer('Вы в главном меню', keyboard=keyboard)
 
 
